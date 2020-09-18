@@ -21,7 +21,6 @@ body{
   height: 700px;
 }
 .ttl-ttl{
-  width: 150px;
   padding-bottom: 20px;
 }
 .ttl-content{
@@ -29,6 +28,9 @@ body{
   width: 50%;
   margin:auto;
   text-align: center;
+}
+.ttl-ttl-wrapper >img{
+  width: 150px;
 }
 .ttl-ttl-wrapper >p{
   font-size: 20px;
@@ -194,7 +196,7 @@ body{
     color: black;
   }
   .sub-left-contents{
-    padding: 50px 5% 0 5%;
+    padding: 50px 5%;
   }
   .sub-right{
     height: 500px;
@@ -272,7 +274,7 @@ body{
   .question-content{
     color: #3f434a;
     margin:0 auto;
-    width: 75%;
+    width: 85%;
     padding: 100px 0 0 0;
   }
 }
@@ -361,7 +363,7 @@ body{
     background-color: #e7e3df;
   }
   .vessel-content{
-    width: 75%;
+    width: 85%;
     color: #3f434a;
     margin:0 auto;
     padding: 50px 0 ;
