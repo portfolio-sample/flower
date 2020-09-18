@@ -18,8 +18,11 @@ body{
 
 /* タイトルに関する部分 */
 .ttl{
-  background-image: url("img/img01.jpg");
   height: 700px;
+}
+.ttl-ttl{
+  width: 150px;
+  padding-bottom: 20px;
 }
 .ttl-content{
   height: 100%;
@@ -27,9 +30,15 @@ body{
   margin:auto;
   text-align: center;
 }
+.ttl-ttl-wrapper >p{
+  font-size: 20px;
+}
+
 @media screen and (min-width:768px){
   .ttl{
+    background-image: url("img/img01.jpg");
     background-position: center bottom;
+    background-size: contain;
   }
   .ttl-ttl-wrapper{
     padding: 150px 0;
@@ -54,7 +63,9 @@ body{
 
 @media screen and (max-width:767px){
   .ttl{
+    background-image: url("img/img01-2.jpg");
     background-position: center center;
+    background-size: cover;
   }
   .ttl-ttl-wrapper{
     padding: 150px 0 300px 0;
@@ -261,7 +272,7 @@ body{
   .question-content{
     color: #3f434a;
     margin:0 auto;
-    width: 65%;
+    width: 75%;
     padding: 100px 0 0 0;
   }
 }
@@ -275,11 +286,13 @@ body{
 .vessel-img-wrapper{
   display: flex;
   justify-content: space-between;
+  padding: 20px 0;
 }
 .bell, .moon, .candle{
   width: 100px;
   height: 120px;
   background-size: cover;
+  background-position: center center;
   position: relative;
 }
 .bell >p, .moon >p, .candle >p{
@@ -306,9 +319,12 @@ body{
   border: solid;
   text-align: center;
   font-weight: bold;
-  font-size: 15px;
-  padding: 5px 10px;
+  font-size: 14px;
+  padding: 5px 5px;
   margin-right: 20px;
+}
+.order-price >p >span{
+  font-size: 14px;
 }
 @media screen and (min-width:767px){
   .vessel{
@@ -327,6 +343,7 @@ body{
     margin: 10px auto 80px auto;
     width: 150px;
     background-color: white;
+    font-weight: bold;
   }
   .vessel-img{
     text-align: right;
@@ -344,7 +361,7 @@ body{
     background-color: #e7e3df;
   }
   .vessel-content{
-    width: 65%;
+    width: 75%;
     color: #3f434a;
     margin:0 auto;
     padding: 50px 0 ;
@@ -353,12 +370,14 @@ body{
     margin: 10px auto 5px auto;
     width: 150px;
     background-color: white;
+    font-weight: bold;
   }
   .vessel-img{
     display: none;
   }
   .vessel-img-sp{
-    width: 100%;
+    width: 90%;
+    margin: auto;
     padding: 20px 0;
   }
   .vessel-img-sp >img{
@@ -526,5 +545,9 @@ body{
   .ttl-btn-wrapper-sp{
     display: flex;
     justify-content: center;
+  }
+  .app-store-sp, .google-play-sp{
+    width: 150px;
+    padding: 10px;
   }
 }
